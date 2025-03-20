@@ -85,6 +85,8 @@ nav a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-witdh:80vw;
+    overflow:hidden;
 }
 .text{
   width: 50%;
