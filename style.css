@@ -255,7 +255,7 @@ iframe::-webkit-scrollbar {
     justify-content: center;
 }
   .instagram-media {
-      width: 100% !important;
+      width: 100%;
   }
 }
 
