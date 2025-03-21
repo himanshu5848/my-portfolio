@@ -103,6 +103,7 @@ nav a {
   margin: auto; /* Centers the section */
   padding: 20px;
   gap: 40px; /* Adds spacing between text and image */
+  min-height:90vh;
 }
 .text{
  text-align: left; /* Centers text */
@@ -111,6 +112,11 @@ nav a {
   font-size: clamp(20px,3.5vw,50px);
   padding: 10px;
   word-wrap: break-word;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  opacity:1;
+  visibility:visible;
 }
 .my-img {
   display: flex;
@@ -120,6 +126,7 @@ nav a {
   min-width: 40%;
   max-witdh:45%;
   margin-top: 15px;
+  
 }
 
 
