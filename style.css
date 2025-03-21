@@ -1,12 +1,20 @@
-
-body { font-family: Arial, sans-serif;
-   margin: 0; 
-   
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+   font-family: Arial, sans-serif;
    background: linear-gradient(to right, #121212, #1a1a1a);
 
    color: #fff;
    padding-top: 60px;
  
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 nav { 
@@ -93,9 +101,8 @@ nav a {
 .text{
  text-align: center; /* Centers text */
   flex: 1; /* Allows text to take up space */
-  min-width: 50%; /* Prevents text from shrinking too much */
-  max-width: 60%;
-  font-size: 2rem;
+  max-width: 100%;
+  font-size: 1.8rem;
   padding: 20px;
   word-wrap: break-word;
 }
