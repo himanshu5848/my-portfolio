@@ -105,7 +105,7 @@ nav a {
   gap: 20px; /* Adds spacing between text and image */
 }
 .text{
- text-align: center; /* Centers text */
+ text-align: left; /* Centers text */
   flex: 1; /* Allows text to take up space */
   max-width: 90%;
   font-size: clamp(24px,5vw,60px);
@@ -210,7 +210,7 @@ nav a {
 
  
 .work{
-  font-size: clamp(24px,5vw,60px);
+  font-size: clamp(24px,4vw,50px);
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: 1px;
@@ -219,9 +219,9 @@ nav a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
+  overflow: break-word;
+  white-space: normal;
+  display: block;
   max-width: 100%;
   animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
   text-align: center;
