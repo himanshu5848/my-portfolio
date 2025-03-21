@@ -81,48 +81,82 @@ nav a {
 
 .myself{
   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-witdh:80vw;
-    overflow:hidden;
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Centers everything horizontally */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  max-width: 100vw;
+  margin: auto; /* Centers the section */
+  padding: 20px;
+  gap: 20px; /* Adds spacing between text and image */
 }
 .text{
-  width: 50%;
+ text-align: center; /* Centers text */
+  flex: 1; /* Allows text to take up space */
+  min-width: 50%; /* Prevents text from shrinking too much */
+  max-width: 60%;
+  font-size: 2rem;
+  padding: 20px;
+  word-wrap: break-word;
 }
 .my-img {
-  width: 40%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-width: 40%;
+  margin-top: 15px;
 }
 
 
 .my-img img{
-  margin-top: 30px ;
-  
-  max-width: 100%;
-  height: 650px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   border-radius: 50%;
   border: 3px solid #ff9800; /* Change color as needed */
   box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.6);
 }
-@media (max-width: 1024px) {  /* Tablet */
-  .text, .my-img {
-      width: 100%;
+/* Adjust for tablet */
+@media (max-width: 1024px) {
+  .my-img img {
+      width: 60%;
+      max-width: 250px;
+  }
+  .text {
+    font-size: 1.2rem;
+    min-width: 100%; /* Chhoti screens pe full width */
+  }
+}   
+@media (max-width: 768px) {
+  .myself {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /* Centers everything horizontally */
       text-align: center;
+      padding: 15px;
   }
-}
 
-@media (max-width: 768px) {  /* Mobile */
-  .nav-bar {
-      flex-direction: column;
-      align-items: center;
+  .text {
+      min-width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
   }
-  .container {
-      flex-direction: column;
+
+  .my-img {
+      display: flex;
+      justify-content: center; /* Centering the image */
+      width: 100%; /* Making sure the div takes full width */
+      margin-top: 10px;
   }
-  .text-content {
-      font-size: 18px;
+
+  .my-img img {
+      
+      width: 80%;
+      max-width: 250px;
   }
+
+  
 }
 
 
