@@ -717,3 +717,186 @@ footer { text-align: center; padding: 1rem; background: #333; }
     }
 }
 
+/* =========================
+   PORTFOLIO SECTION
+========================= */
+
+.portfolio-section {
+    padding: 100px 8%;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+    color: #ff9800;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: clamp(35px, 5vw, 55px);
+
+    margin: 0;
+
+    color: #ffffff;
+}
+
+.section-heading h2 span {
+    color: #ff9800;
+}
+
+.heading-line {
+    width: 60px;
+
+    height: 3px;
+
+    background: #ff9800;
+
+    margin: 20px auto;
+}
+
+
+/* PROJECT GRID */
+
+.video-cont {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    background: #181818;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff9800;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* INSTAGRAM VIDEO */
+
+.project-video {
+    width: 100%;
+
+    min-height: 400px;
+
+    display: flex;
+
+    justify-content: center;
+
+    background: #111;
+
+    overflow: hidden;
+}
+
+
+.instagram-media {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+}
+
+
+/* PROJECT INFORMATION */
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+.project-info p {
+    margin: 0;
+
+    color: #aaa;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* BUTTON */
+
+.portfolio-button {
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .video-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .portfolio-section {
+        padding: 70px 5%;
+    }
+
+    .video-cont {
+        grid-template-columns: 1fr;
+    }
+
+    .project-video {
+        min-height: 350px;
+    }
+
+}
