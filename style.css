@@ -821,8 +821,8 @@ footer { text-align: center; padding: 1rem; background: #333; }
 
 @media (max-width: 900px) {
 
-    .video-cont {
-        grid-template-columns: repeat(2, 1fr);
+ .video-cont {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
 
 }
@@ -834,12 +834,25 @@ footer { text-align: center; padding: 1rem; background: #333; }
         padding: 70px 5%;
     }
 
-    .video-cont {
-        grid-template-columns: 1fr;
+       .video-cont {
+        grid-template-columns: 1fr !important;
     }
 
     .project-video {
         min-height: 350px;
     }
 
+}
+.video-cont {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    width: 100%;
+    min-width: 0;
 }
