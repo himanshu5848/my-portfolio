@@ -47,9 +47,6 @@ html, body {
   color: #ffffff;
 }
 
-.logo span {
-  color: #ff9800;
-}
 
 
 
@@ -177,7 +174,7 @@ html, body {
   justify-content: center;
   align-items: center;
   min-width: 40%;
-  margin-top: 15px;
+  margin-top: 25px;
   
 }
 
