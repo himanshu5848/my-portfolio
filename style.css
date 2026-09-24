@@ -1493,3 +1493,108 @@ footer p {
 
     font-size: 13px;
 }
+/* ========================================
+   FINAL ANIMATIONS
+======================================== */
+
+/* Fade-up animation */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Hero animation */
+
+.hero-content {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-image {
+    animation: fadeUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+
+/* Section headings */
+
+.section-heading {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+/* Portfolio cards */
+
+.project-card {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+/* Service cards */
+
+.service-card {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+/* About */
+
+.about-content {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.highlight-card {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+/* Contact */
+
+.contact-info {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.contact-form-container {
+    animation: fadeUp 0.7s ease 0.15s forwards;
+}
+
+
+/* Button interaction */
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+
+/* Image hover */
+
+.hero-image img {
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Respect reduced-motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
