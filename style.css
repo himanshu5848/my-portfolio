@@ -288,56 +288,8 @@ html, body {
 }
 
 
-#portfolio h2{
-  text-transform: uppercase;
 
-}
-iframe {
-  width: 100%;
-  height: 500px; /* Adjust as needed */
-  overflow: hidden;
-}
 
-iframe::-webkit-scrollbar {
-  display: none; /* Hide scrollbar if any */
-}
-
-#portfolio h2{
-  font-size: 50px;
-  letter-spacing: 1px;
-}
-.video-cont{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
-}
-.outer{
-   
- flex: 1 1 300px;
-  max-width: 400px; 
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  padding-top: 177,77%;
-  border-radius: 10px; /* Rounded corners */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.instagram-media{
-    
-    width: 100% ;
-    max-width: 400px;
-    height: 400px ;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid black;
-    border-radius: 0.5rem;
-    
-  
-  
-}
 @media (max-width: 600px) {
   .video-cont {
       flex-direction: column;
@@ -345,16 +297,7 @@ iframe::-webkit-scrollbar {
   }
 
 
-  .outer {
-    width: 90%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-  .instagram-media {
-      width: 100%;
-  }
-}
+
 
 
 
