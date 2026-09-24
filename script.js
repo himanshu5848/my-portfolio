@@ -16,6 +16,10 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   .catch(error => alert("Error sending message!"));
 });
 
+
 function toggleMenu() {
-  document.querySelector(".nav-links").classList.toggle("show");
+  const navLinks = document.querySelector(".nav-links");
+
+  navLinks.classList.toggle("show");
 }
+
