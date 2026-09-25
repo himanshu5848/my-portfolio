@@ -261,22 +261,22 @@ section {
 ======================================== */
 
 .hero-image {
-    flex: 0 0 390px;
+    flex: 0 0 450px;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
 
 .hero-image img {
-    width: 390px;
-    height: 460px;
+    width: 450px;
+    height: 450px;
 
     object-fit: cover;
+    object-position: center;
 
     border: 1px solid #111111;
-    border-radius: 4px;
+    border-radius: 50%;
 
     box-shadow: none;
 
@@ -284,12 +284,10 @@ section {
 }
 
 .hero-image img:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
-.hero-image img:hover {
-    transform: scale(1.01);
-}
+
 
 
 /* ========================================
@@ -980,12 +978,12 @@ section {
     }
 
     .hero-image {
-        flex: 0 0 320px;
+        flex: 0 0 360px;
     }
 
     .hero-image img {
-        width: 320px;
-        height: 400px;
+        width: 360px;
+        height: 360px;
     }
 
 }
@@ -1071,8 +1069,8 @@ section {
     }
 
     .hero-image img {
-        width: 280px;
-        height: 340px;
+        width: 300px;
+        height: 300px;
     }
 
 
@@ -1170,8 +1168,8 @@ section {
     /* Hero image */
 
     .hero-image img {
-        width: 240px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
     }
 
 
