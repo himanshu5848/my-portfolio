@@ -276,13 +276,16 @@ section {
 
     object-fit: cover;
 
-    border-radius: 2px;
-
-    border: none;
+    border: 1px solid #111111;
+    border-radius: 4px;
 
     box-shadow: none;
 
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.01);
 }
 
 .hero-image img:hover {
